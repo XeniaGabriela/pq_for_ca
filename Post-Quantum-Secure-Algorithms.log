@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.18)  4 JUL 2018 21:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.18)  12 JUL 2018 22:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -156,33 +156,42 @@ Package: multicol 2015/08/19 v1.8n multicolumn formatting (FMi)
 \colbreak@box=\box53
 \mc@col@check@num=\count107
 )
-\c@excnt=\count108
-\c@thm=\count109
-\c@lemma=\count110
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\enitkv@toks@=\toks22
+\labelindent=\skip48
+\enit@outerparindent=\dimen121
+\enit@toks=\toks23
+\enit@inbox=\box54
+\enitdp@description=\count108
+)
+\c@excnt=\count109
+\c@thm=\count110
+\c@lemma=\count111
 
 (./Post-Quantum-Secure-Algorithms.aux)
 \openout1 = `Post-Quantum-Secure-Algorithms.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for U+msa on input line 71.
+LaTeX Font Info:    Try loading font information for U+msa on input line 79.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 71.
+LaTeX Font Info:    Try loading font information for U+msb on input line 79.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -191,37 +200,42 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Warning: No \author given.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--90
+Underfull \hbox (badness 10000) in paragraph at lines 82--95
 
  []
 
 [1]
-Underfull \hbox (badness 10000) in paragraph at lines 99--102
+Underfull \hbox (badness 10000) in paragraph at lines 104--107
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--131
+Underfull \hbox (badness 10000) in paragraph at lines 131--136
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 139--141
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 142.
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 161.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 142.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 161.
 
 Underfull \hbox (badness 10000) in paragraph at lines 185--191
 
@@ -239,13 +253,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 185--191
 
 [3] [4] (./Post-Quantum-Secure-Algorithms.aux) ) 
 Here is how much of TeX's memory you used:
- 1571 strings out of 494374
- 17551 string characters out of 6164954
- 77445 words of memory out of 5000000
- 4903 multiletter control sequences out of 15000+600000
+ 1859 strings out of 494374
+ 22442 string characters out of 6164954
+ 84092 words of memory out of 5000000
+ 5187 multiletter control sequences out of 15000+600000
  19873 words of font info for 51 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
- 27i,6n,24p,667b,243s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,6n,24p,667b,289s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/xenia/.texmf-var/fonts/
 pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/xenia/.texmf-var/fonts/pk/ljfour/j
 knappen/ec/ecbx1200.600pk> </home/xenia/.texmf-var/fonts/pk/ljfour/jknappen/ec/
@@ -256,13 +270,13 @@ mf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/xenia/.texmf-var/font
 s/pk/ljfour/jknappen/ec/ecbx2074.600pk> </home/xenia/.texmf-var/fonts/pk/ljfour
 /jknappen/ec/ecbx2488.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
+s/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Post-Quantum-Secure-Algorithms.pdf (5 pages, 140525 bytes).
+Output written on Post-Quantum-Secure-Algorithms.pdf (5 pages, 137985 bytes).
 PDF statistics:
- 354 PDF objects out of 1000 (max. 8388607)
+ 341 PDF objects out of 1000 (max. 8388607)
  66 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
