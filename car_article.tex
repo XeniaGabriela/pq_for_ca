@@ -1,0 +1,121 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{CAR}
+
+\begin{document}
+\setcounter{footnote}{0}
+\setcounter{figure}{0}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FOR THE EDITOR
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Abschnitt
+% Name der Rubrik
+{Rubrik}
+% Name der Rubrik (Inhaltsverzeichnis)
+{Rubrik}
+% Label fuer die Rubrik
+{rubrik}
+
+\vspace{3mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FOR THE AUTHORS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Aufsatz
+% Title
+{Title of the article}
+% Short title for the table of contents
+{Short title}
+% Authors
+{M.\ Name, S.\ Author}
+% Label of authors' names
+{NameAuthor}
+% Names and adresses
+{M.\ Name, University of ...\\ S.\ Author, University of ...}
+% Images of authors
+{../images/small_keinbild.jpg,../images/small_keinbild.jpg}
+% E-Mails
+{m.name@email.de,s.author@email.de}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% IF THE ARTICLE IS WRITTEN IN ENGLISH, THEN UNCOMMENT
+% THE NEXT LINE AND ANOTHER LINE AT THE END OF THIS FILE
+%\begin{otherlanguage}{english}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{3mm}
+\begin{multicols}{2}
+\noindent
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% WRITE YOUR ARTICLE BELOW using \Ueberschrift \Ueberschriftu \begin{figurehead}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% The command \Ueberschrift{Title}{label} produces a headline and new section
+\Ueberschrift{Introduction}{intro}
+
+% The command \Ueberschriftu{Title} produces a subsection
+\Ueberschriftu{A subsection}
+
+%%% For figures
+%\begin{figurehere}
+%  \centering
+%  \includegraphics[width=\columnwidth]{Abbildung}
+%  \caption{First figure of this article.\label{abb_1}}
+%\end{figurehere}
+
+
+%
+% C
+% O
+% N
+% T
+% E
+% N
+% T
+%
+% H
+% E
+% R
+% E
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Literature
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{thebibliography}{1}
+\itemsep=0cm plus 0pt minus 0pt
+
+
+% Macro for an entry in the bibliography
+\bibitem
+% label
+{B1}
+% authors
+Max~H.\ Mustermann und Hans~M.\ N.N.
+% title
+\newblock Example of a title.
+% Journal
+\newblock {\em Computeralgebra-Rundbrief}, 49:0--1, Oktober 2011.
+
+
+
+\end{thebibliography}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{multicols}
+
+
+
+%%% IF ENGLISH:
+%\end{otherlanguage}
+%%%
+
+\end{document}
