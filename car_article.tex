@@ -1,19 +1,22 @@
-\documentclass[a4paper,11pt]{article}
+\documentclass[a4paper,11pt,draft]{article}
 \usepackage{CAR}
 \usepackage[T1]{fontenc}
 %\usepackage[latin1]{inputenc}
 \usepackage{amsfonts}
 \usepackage{amsmath}
 \usepackage{amssymb}
-\usepackage{multicol}
-\usepackage{enumitem}
+%\usepackage{multicol}
+%\usepackage{enumitem}
 
-\newenvironment{my_enumerate}{
-\begin{enumerate}
-  \setlength{\itemsep}{0.2pt}
-  \setlength{\parskip}{0pt}
-  \setlength{\parsep}{0pt}}{\end{enumerate}
-}
+\usepackage{todo}
+
+
+% \newenvironment{my_enumerate}{
+% \begin{enumerate}
+%   \setlength{\itemsep}{0.2pt}
+%   \setlength{\parskip}{0pt}
+%   \setlength{\parsep}{0pt}}{\end{enumerate}
+% }
 
 \begin{document}
 \setcounter{footnote}{0}
@@ -105,11 +108,13 @@ Syndrome decoding of linear error-correcting codes are NP-complete considered as
 
 There are two basic encryption schemes based on this set-up, the McEliece and the Niederreiter cryptosystems. McEliece, introduced in 1978, was the first scheme using randomization in the encryption process. It is based on the choice of an $(n,k)$-linear code and consists of three algorithms:
 
-\begin{my_enumerate} 
+%\begin{my_enumerate}
+\begin{enumerate}
 \item[1)] a probabilistic key generation algorithm producing an asymmetric key pair
 \item[2)] a probabilistic encryption algorithm
 \item[3)] a deterministic decryption algorithm.
-\end{my_enumerate}  
+\end{enumerate}
+%\end{my_enumerate}  
 
 The private key is an error correcting code with efficient decoding algorithm represented by a generator matrix $G$. Originally binary Goppa Codes with the Patterson decoding algorithm were used. The public key is a the generator matrix $G$ perturbated by two randomly chosen invertible matrices $S$ and $P$
 
@@ -121,7 +126,7 @@ where $S$, a $(k \times k)$ matrix, functions as a scrambler and $P$ is a $(n \t
 \item Wang proposed secure encryption scheme based on any efficient linear code 
 \item encryption and decryption faster than RSA for comparative benchmarks (bench.cr.yp.to) 
 \item rarely used, exceptionally: freenet-like application entropy 
-\item McEliece not IK-CPA but Randomized McEliece IK-CPA
+\item McEliece not IK-CPA but Randomized McEliece IK-CPA 
 \end{itemize} 
 
 
@@ -149,7 +154,7 @@ Hereby, the number of possibilities for such signatures are all possible combina
 The latest performance improved hash-based signature scheme is SPHINCS\textsuperscript{+}, the advanced SPHINCS scheme which was presented at EUROCRYPT 2015. Unlike its predecessors XMSS and LMS it is stateless, meaning that signing doesn't require updating the secret key. It is a so called few-times scheme, where "few" means as much as $2^{64}$. Its signature sizes range from 8kb for NIST security level 1 to 30kb for NIST security level 5.\\
 
 \Ueberschriftu{Isogeny-Based}
-So far only following some fundamental math slides -- still to grasp what is at least near to some implementation... (TODO)
+\Todo{Do we want to speak about this?} So far only following some fundamental math slides -- still to grasp what is at least near to some implementation... 
 
 \Ueberschriftu{Lattice-Based}
 Most used and implemented methods so far - mostly used is NTRU. NewHope seems to be a very interesting thing...
@@ -158,7 +163,7 @@ NTRU seems to be the first successful and still out there algorithm.
 
 Have to speak about NTRU, GGH, and Silverman algorithm!  and mention LLL --> BKZ which came out in 1982 (see silverman 406)
 
-Congruential, Knapsack, GGH, NTRU, new hope?
+Congruential, Knapsack, GGH, NTRU, new hope? \Todo{rewrite section}
 
 
 %%% For figures
@@ -168,23 +173,7 @@ Congruential, Knapsack, GGH, NTRU, new hope?
 %  \caption{First figure of this article.\label{abb_1}}
 %\end{figurehere}
 
-
-%
-% C
-% O
-% N
-% T
-% E
-% N
-% T
-%
-% H
-% E
-% R
-% E
-%
-
-
+\todos
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Literature
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
