@@ -1,5 +1,19 @@
 \documentclass[a4paper,11pt]{article}
 \usepackage{CAR}
+\usepackage[T1]{fontenc}
+%\usepackage[latin1]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{enumitem}
+
+\newenvironment{my_enumerate}{
+\begin{enumerate}
+  \setlength{\itemsep}{0.2pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}}{\end{enumerate}
+}
 
 \begin{document}
 \setcounter{footnote}{0}
@@ -25,26 +39,26 @@
 
 \Aufsatz
 % Title
-{Title of the article}
+{Post-Quantum Secure Cryptographic Algorithms}
 % Short title for the table of contents
-{Short title}
+{Overview of Developments 2017/2018}
 % Authors
-{M.\ Name, S.\ Author}
+{Dipl. Math. Xenia Bogomolec, Dr. Jochen Gerhard}
 % Label of authors' names
 {NameAuthor}
 % Names and adresses
-{M.\ Name, University of ...\\ S.\ Author, University of ...}
+{Xenia Bogomolec, University of ...\\ Dr. Jochen Gerhard, BearingPoint Software Solutions GmbH}
 % Images of authors
-{../images/small_keinbild.jpg,../images/small_keinbild.jpg}
+{./xenia.jpg,./jochen.jpg}
 % E-Mails
-{m.name@email.de,s.author@email.de}
+{m.name@email.de,jochen.gerhard@bearingpoint.com}
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % IF THE ARTICLE IS WRITTEN IN ENGLISH, THEN UNCOMMENT
 % THE NEXT LINE AND ANOTHER LINE AT THE END OF THIS FILE
-%\begin{otherlanguage}{english}
+\begin{otherlanguage}{english}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \vspace{3mm}
@@ -115,7 +129,7 @@ Max~H.\ Mustermann und Hans~M.\ N.N.
 
 
 %%% IF ENGLISH:
-%\end{otherlanguage}
+\end{otherlanguage}
 %%%
 
 \end{document}
