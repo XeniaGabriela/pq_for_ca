@@ -50,7 +50,7 @@
 % Label of authors' names
 {NameAuthor}
 % Names and adresses
-{Xenia Bogomolec, X4pi UG\\ Dr. Jochen Gerhard, BearingPoint Software Solutions GmbH}
+{Dipl. Math. Xenia Bogomolec, X4pi UG\\ Dr. Jochen Gerhard, BearingPoint Software Solutions GmbH}
 % Images of authors
 {./xenia.jpg,./jochen.jpg}
 % E-Mails
@@ -105,14 +105,14 @@ Rarely mentioned is the fact that message source authentication does not come wi
 The alternative to QKD are algorithms whose security rely on mathematical properties, like hardness of computing the inversion of a one way function even with a quantum computer. There are four mathematical areas which offer solutions for encryption, key exchanges and signatures. Some of them are still in the middle of the research process, others have been observed and challenged for years. The advantages of post-quantum cryptography are that they run effectively on currently used devices such as smart phones, desktops and IoTs and they can be enabled by simple software updates.
 
 \Ueberschriftu{Code-Based}
-Syndrome decoding of linear error-correcting codes are NP-complete considered as a decision problem if the number of errors are unbounded. On the other hand, some classes of linear codes have very fast decoding algorithms. The basic idea of such a crypto system is to take one of those linear codes with fast decoding algorithms and disguise it as a general linear code. Then the attacker has use syndrome decoding for decrypting the message while the message receiver, who also set up the system, can remove the disguise and use the fast decoding algorithm. \\
+Syndrome decoding of linear error-correcting codes are NP-complete considered as a decision problem if the number of errors are unbounded. On the other hand, some classes of linear codes have very fast decoding algorithms. The basic idea of a code-based crypto system is to choose a linear code with fast decoding algorithm and disguise it as a general linear code. Then the attacker has to use syndrome decoding for decrypting the message while the message receiver, who also set up the system, can remove the disguise and use the fast decoding algorithm. \\
 \\
-There are two basic encryption schemes based on this set-up, the McEliece and the Niederreiter cryptosystems. Robert McEliece introduced his scheme in $1978$. It was the first scheme using randomization in the encryption process and consists of three algorithms:
+McEliece and the Niederreiter cryptosystems are two basic encryption schemes based on this setup. Robert McEliece introduced his scheme in $1978$. It was the first scheme using randomization in the encryption process and consists of three algorithms:
 
 \begin{itemize} [noitemsep, nolistsep]
-\item[1)] a probabilistic key generation algorithm producing an asymmetric key pair
-\item[2)] a probabilistic encryption algorithm
-\item[3)] a deterministic decryption algorithm.
+\item[1)] Probabilistic key generation algorithm producing an asymmetric key pair
+\item[2)] Probabilistic encryption algorithm
+\item[3)] Deterministic decryption algorithm
 \end{itemize} 
 
 \vspace{0.4cm}
@@ -121,10 +121,23 @@ The private key is an $(n,k)$-linear error correcting code represented by a gene
 
 $$ G^\prime = SGP $$
 \\
-where $S$, a $(k \times k)$ matrix, functions as a scrambler and $P$ is a $(n \times n)$ permutation matrix. Parameters proposed by McEliece result in a public key of $2^{16}$ bytes size. The most effective attacks on McEliece use information-set decoding. To resist those in a quantum computing context, key sizes have to be increased by a factor of 4. McEliece cannot be used for authentication or signature schemes because the encryption algorithm is not one-to-one and the total algorithm is truly asymmetric, meaning, encryption and decryption do not commute.\\
+where $S$, a $(k \times k)$ matrix, functions as a scrambler and $P$ is a $(n \times n)$ permutation matrix. Parameters proposed by McEliece result in a public key of $2^{16}$ bytes size. The most effective attacks on McEliece use information-set decoding. To resist those in a quantum computing context, key sizes have to be increased by a factor of 4.\\
 \\
-Niederreiter, developed by Harald Niederreiter in $1986$, applies the same idea to a parity check matrix $H$ of a linear code. A one-time signature scheme based on Niederreiter exists. Wang proposed secure encryption scheme based on any efficient linear code in $200X$. Another simple, secure and efficient key exchange protocol based on coding theory is Ouroboros. Encryption and decryption are faster than RSA for comparative benchmarks (bench.cr.yp.to). Code based encryption schemes are rarely used, exceptionally: freenet-like application entropy. 
+Niederreiter, developed by Harald Niederreiter in $1986$, applies the same idea to a parity check matrix $H$ of a linear code. The encryption is about ten times faster than McEliece.  McEliece was originally believed not to be usable for authentication or signature schemes because the encryption algorithm is not one-to-one and the total algorithm is truly asymmetric, meaning, encryption and decryption do not commute. However, a one-time signature scheme based on McEliece and Niederreiter was proposed by Courtois, Finiasz and Sendrier in $2001$: 
+\todo{Add references for all scientific achievements!!!}
+\todo{Recheck and refine the code-based signature schemes} \\
 
+\begin{itemize} [noitemsep, nolistsep]
+\item[1)] Choose a hash function $h$  and compute the hash value $h(d)$ of the document $d$ which has to be be signed
+\item[2)] Decrypt the hash value $h(d)$ as if it was an instance of the ciphertext
+\item[3)] Append the decrypted hash value to the document as a signature
+\end{itemize} 
+
+\vspace{0.4cm}
+\noindent
+As the second step in the signature scheme almost always fails, the system additonally specifies a deterministic way of tweaking $d$ until a hash value $h(d)$ is found which can be decrypted. Verification then applies the public encryption function to the signaturetu the signature and compares it to the hash value of the document. \\
+\\
+Another simple, secure and efficient code-based key exchange protocol is Ouroboros. The encryption algorithm uses Quasi-Cyclic Codes in Hamming metric, efficient decoding is achieved through BitFlipping. Encryption and decryption are faster than RSA for comparative benchmarks (https://bench.cr.yp.to). Ouroboros' integration into the OpenSSL/TLS library is planned and it is proposed as post-quantum secure algorithm at the NIST.
 
 \Ueberschriftu{Hash-Based}
 This domain is limited to digital signatures schemes which rely exclusively on the security of the underlying hash functions so far. The signatures themselves reveal a part of the signing key and can only be used for one message, same as it is known from one-time pads such as visual cryptography shares. \\
