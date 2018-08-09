@@ -50,11 +50,11 @@
 % Label of authors' names
 {NameAuthor}
 % Names and adresses
-{Xenia Bogomolec, University of ...\\ Dr. Jochen Gerhard, BearingPoint Software Solutions GmbH}
+{Dipl. Math. Xenia Bogomolec, X4pi UG\\ Dr. Jochen Gerhard, BearingPoint Software Solutions GmbH}
 % Images of authors
 {./xenia.jpg,./jochen.jpg}
 % E-Mails
-{m.name@email.de,jochen.gerhard@bearingpoint.com}
+{indigomind@protonmail.ch,jochen.gerhard@bearingpoint.com}
 
 
 
@@ -84,15 +84,14 @@ Quantum-mechanical phenomena, such as superposition and entanglement, are used f
 49 qubit processors mark quantum supremacy, the potential ability of quantum computing devices to solve problems that classical computers practically cannot solve. IBM has announced to have built a 50 qubit prototype, Google participates in the race with their new record-breaking 72-qubit quantum processor Bristlecone.
 
 \Ueberschriftu{Benefits}
-
 Quantum technologies offer and promise major benefits. So called adiabatic quantum computers, e.g. the D-Wave 2000Q with 2048 qubits from D-Wave Systems in Canada are able to solve optimization problems that would overburden a classical computer. Photon based quantum key distribution devices from ID Quantique in Switzerland are used by the government in Geneva. China has built a 2000km quantum communication channel between Beijing and Shanghai for banks, the Xinhua News Agency and the government, whose nodes receive keys from their quantum communication satellite. Last year they denoted feasible distances up to 1200 km. \\
 In the future quantum computers with enough stable qubits are expected to be able to help building complex materials as well as solve medical and environmental problems amongst other things.
 
 \Ueberschriftu{Threats}
-
 It is long known that the security of currently used cryptographic algorithms relying on the hardness of integer factorization will expire with potent enough quantum computers. All public parameters like public keys from asymmetric key pairs and collected key exchanges with the following exchanged data can be used to decrypt data which is meant to be secret. \\
 
 \Ueberschrift{Solutions}{solutions}
+
 \Ueberschriftu{Quantum Key Distribution}
 QKD is an implemented cryptographic protocol for key distribution involving components of quantum mechanics. The security of encryption that uses quantum key distribution relies on the foundations of quantum mechanics. In this context, the process of measuring a quantum system in general disturbs the system itself. So any third party trying to gain knowledge of the key would be detected by the original communication parties. \\ 
 \\
@@ -100,50 +99,45 @@ Quantum key distribution networks have already been established in China (QUESS)
 Disadvantages for widespread practical usage are limited distances between communication partners and the need of expensive hardware. \\
 Rarely mentioned is the fact that message source authentication does not come with QKD genuinely. Man in the middle attacks are also possible if the communication parties do not agree on an authentication protocol beforehand.  
 
+\noindent
+
 \Ueberschrift{Post-Quantum Cryptography}{pqcrypto}
 The alternative to QKD are algorithms whose security rely on mathematical properties, like hardness of computing the inversion of a one way function even with a quantum computer. There are four mathematical areas which offer solutions for encryption, key exchanges and signatures. Some of them are still in the middle of the research process, others have been observed and challenged for years. The advantages of post-quantum cryptography are that they run effectively on currently used devices such as smart phones, desktops and IoTs and they can be enabled by simple software updates.
 
 \Ueberschriftu{Code-Based}
-Syndrome decoding of linear error-correcting codes are NP-complete considered as a decision problem if the number of errors are unbounded.  On the other hand, some classes of linear codes have very fast decoding algorithms. The basic idea of such a system is to take one of those linear codes with fast decoding algorithms and disguise it as a general linear code. Then the attacker has use syndrome decoding for decrypting the message while the message receiver, who set up the system, can remove the disguise and use the fast decoding algorithm. \\
+Syndrome decoding of linear error-correcting codes are NP-complete considered as a decision problem if the number of errors are unbounded. On the other hand, some classes of linear codes have very fast decoding algorithms. The basic idea of a code-based crypto system is to choose a linear code with fast decoding algorithm and disguise it as a general linear code. Then the attacker has to use syndrome decoding for decrypting the message while the message receiver, who also set up the system, can remove the disguise and use the fast decoding algorithm. \\
+\\
+McEliece and the Niederreiter cryptosystems are two basic encryption schemes based on this setup. Robert McEliece introduced his scheme in $1978$. It was the first scheme using randomization in the encryption process and consists of three algorithms:
 
-There are two basic encryption schemes based on this set-up, the McEliece and the Niederreiter cryptosystems. McEliece, introduced in 1978, was the first scheme using randomization in the encryption process. It is based on the choice of an $(n,k)$-linear code and consists of three algorithms:
+\begin{itemize} [noitemsep, nolistsep]
+\item[1)] Probabilistic key generation algorithm producing an asymmetric key pair
+\item[2)] Probabilistic encryption algorithm
+\item[3)] Deterministic decryption algorithm
+\end{itemize} 
 
-%\begin{my_enumerate}
-\begin{enumerate}
-\item[1)] a probabilistic key generation algorithm producing an asymmetric key pair
-\item[2)] a probabilistic encryption algorithm
-\item[3)] a deterministic decryption algorithm.
-\end{enumerate}
-%\end{my_enumerate}  
+\vspace{0.4cm}
 
-The private key is an error correcting code with efficient decoding algorithm represented by a generator matrix $G$. Originally binary Goppa Codes with the Patterson decoding algorithm were used. The public key is a the generator matrix $G$ perturbated by two randomly chosen invertible matrices $S$ and $P$
+The private key is an $(n,k)$-linear error correcting code represented by a generator matrix $G$, with a known efficient decoding algorithm. Originally binary Goppa Codes with the Patterson decoding algorithm were used. The public key is the generator matrix $G$ perturbated by two randomly chosen invertible matrices $S$ and $P$
 
 $$ G^\prime = SGP $$
-
-where $S$, a $(k \times k)$ matrix, functions as a scrambler and $P$ is a $(n \times n)$ permutation matrix. Parameters proposed by McEliece result in a public key of $2^{16}$ bytes size. The most effective attacks on McEliece use information-set decoding. To resist those in a quantum computing context, key sizes have to be increased by a factor of 4. This cryptosystem cannot be used for authentication or signature schemes because the encryption algorithm is not one-to-one and the total algorithm is truly asymmetric (encryption and decryption do not commute)\\
+\\
+where $S$, a $(k \times k)$ matrix, functions as a scrambler and $P$ is a $(n \times n)$ permutation matrix. Parameters proposed by McEliece result in a public key of $2^{16}$ bytes size. The most effective attacks on McEliece use information-set decoding. To resist those in a quantum computing context, key sizes have to be increased by a factor of 4.\\
+\\
+Niederreiter, developed by Harald Niederreiter in $1986$, applies the same idea to a parity check matrix $H$ of a linear code. The encryption is about ten times faster than McEliece.  McEliece was originally believed not to be usable for authentication or signature schemes because the encryption algorithm is not one-to-one and the total algorithm is truly asymmetric, meaning, encryption and decryption do not commute. However, a one-time signature scheme based on McEliece and Niederreiter was proposed by Courtois, Finiasz and Sendrier in $2001$: 
+\todo{Add references for all scientific achievements!!!}
+\todo{Recheck and refine the code-based signature schemes} \\
 
 \begin{itemize} [noitemsep, nolistsep]
-\item Wang proposed secure encryption scheme based on any efficient linear code 
-\item encryption and decryption faster than RSA for comparative benchmarks (bench.cr.yp.to) 
-\item rarely used, exceptionally: freenet-like application entropy 
-\item McEliece not IK-CPA but Randomized McEliece IK-CPA 
+\item[1)] Choose a hash function $h$  and compute the hash value $h(d)$ of the document $d$ which has to be be signed
+\item[2)] Decrypt the hash value $h(d)$ as if it was an instance of the ciphertext
+\item[3)] Append the decrypted hash value to the document as a signature
 \end{itemize} 
 
-
-\textbf{Niederreiter}
-\begin{itemize} [noitemsep, nolistsep]
-\item variation of McEliece $1986$
-\item applies same idea to parity check matrix $H$ of a linear code
-\item a signature scheme based on Niederreiter exists
-\item We proved	that the k-repetition paradigm instantiated	with Niederreiter is IK-CCA2 in	the	standard model.	(IK = Indistinguishability	of keys , means	a ciphertext does not leak information about pk.)
-\item IND-CPA $\nLeftrightarrow$ IK-CPA, IND-CCA $\nLeftrightarrow$ IK-CCA
-\item IND-CCA2 and IK-CCA2 with k-wise Niederreiter, random padding, one-time signature
-\item open: more efficient scheme in the standard model?
-\end{itemize} 
-
-\textbf{Ouroboros}
-
-A simple, secure and efficient key exchange protocol based on coding theory. MCEliece $1978$, Niederreiter $1986$, RS,BCH, Goppa, RM $2000$. Key exchange as an encryption scheme. Ouroboros is IND-CPA under the 2-DQCSD and 3-DQCSD assumptions.
+\vspace{0.4cm}
+\noindent
+As the second step in the signature scheme almost always fails, the system additonally specifies a deterministic way of tweaking $d$ until a hash value $h(d)$ is found which can be decrypted. Verification then applies the public encryption function to the signaturetu the signature and compares it to the hash value of the document. \\
+\\
+Another simple, secure and efficient code-based key exchange protocol is Ouroboros. The encryption algorithm uses Quasi-Cyclic Codes in Hamming metric, efficient decoding is achieved through BitFlipping. Encryption and decryption are faster than RSA for comparative benchmarks (https://bench.cr.yp.to). Ouroboros' integration into the OpenSSL/TLS library is planned and it is proposed as post-quantum secure algorithm at the NIST.
 
 \Ueberschriftu{Hash-Based}
 This domain is limited to digital signatures schemes which rely exclusively on the security of the underlying hash functions so far. The signatures themselves reveal a part of the signing key and can only be used for one message, same as it is known from one-time pads such as visual cryptography shares. \\
@@ -151,10 +145,11 @@ This domain is limited to digital signatures schemes which rely exclusively on t
 Merkle tree signature schemes, introduced in 1979, combine a one-time signature scheme with a Merkle tree structure. Building blocks of the Merkle trees are one-time signature key pairs, with the node at the top being the global public key. This typically 256 bit large key can be verified with the path to another given public one-time key in the tree using a sequence of tree nodes, called the authentication path. The global private key is usually derived from a seed generated by a PRNG and has the size of 256 bits as well.
 Hereby, the number of possibilities for such signatures are all possible combinations of the simple one-time signatures within the tree structure. This procedure considerously enhances the security of the scheme against brute force attacks. \\
 \\
-The latest performance improved hash-based signature scheme is SPHINCS\textsuperscript{+}, the advanced SPHINCS scheme which was presented at EUROCRYPT 2015. Unlike its predecessors XMSS and LMS it is stateless, meaning that signing doesn't require updating the secret key. It is a so called few-times scheme, where "few" means as much as $2^{64}$. Its signature sizes range from 8kb for NIST security level 1 to 30kb for NIST security level 5.\\
+The latest performance improved hash-based signature scheme is SPHINCS\textsuperscript{+}, the advanced SPHINCS scheme which was presented at EUROCRYPT 2015. Unlike its predecessors, XMSS and LMS, it is stateless, meaning that signing doesn't require updating the secret key. It is a so called few-times scheme, where "few" means as much as $2^{64}$. Its signature sizes range from 8kb for NIST security level 1 to 30kb for NIST security level 5.\\
 
 \Ueberschriftu{Isogeny-Based}
-\Todo{Do we want to speak about this?} So far only following some fundamental math slides -- still to grasp what is at least near to some implementation... 
+\Todo{Do we want to speak about this?} So far only following some fundamental math slides -- still to grasp what is at least near to some implementation...
+\Todo{I would like to mention it to give an overview of what is actually being considered. It was a well considered topic at the PQCrypto Conference 2017 and Microsoft e.g. published an experimental VPN version with isogeny based crypto.}
 
 \Ueberschriftu{Lattice-Based}
 Most used and implemented methods so far - mostly used is NTRU. NewHope seems to be a very interesting thing...
@@ -163,6 +158,8 @@ NTRU seems to be the first successful and still out there algorithm.
 
 Have to speak about NTRU (Silverman), GGH, NTRU prime and new hope!  and mention LLL --> BKZ which came out in 1982 (see silverman 406)
 \Todo{rewrite section}
+
+\Ueberschriftu{Multivariate}
 
 
 %%% For figures
