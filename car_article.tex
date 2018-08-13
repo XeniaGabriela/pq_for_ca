@@ -148,8 +148,11 @@ Hereby, the number of possibilities for such signatures are all possible combina
 The latest performance improved hash-based signature scheme is SPHINCS\textsuperscript{+}, the advanced SPHINCS scheme which was presented at EUROCRYPT 2015. Unlike its predecessors, XMSS and LMS, it is stateless, meaning that signing doesn't require updating the secret key. It is a so called few-times scheme, where "few" means as much as $2^{64}$. Its signature sizes range from 8kb for NIST security level 1 to 30kb for NIST security level 5.\\
 
 \Ueberschriftu{Isogeny-Based}
-\Todo{Do we want to speak about this?} So far only following some fundamental math slides -- still to grasp what is at least near to some implementation...
-\Todo{I would like to mention it to give an overview of what is actually being considered. It was a well considered topic at the PQCrypto Conference 2017 and Microsoft e.g. published an experimental VPN version with isogeny based crypto.}
+\Todo{Good Idea as outlook!} One of the latest and most challenging pq crypto ideas is the application of Isogeny based encryption schemes. There are alread first applications, as e.g. Microsofts VPN-client. \todo{cite openvpn from MS}
+
+%\Todo{I would like to mention it to give an overview of what is actually being considered. It was a well considered topic at the PQCrypto Conference 2017 and Microsoft e.g. published an experimental VPN version with isogeny based crypto.}
+% agreed - it is one of the interesting new things, that we should mention.
+
 
 \Ueberschriftu{Lattice-Based}
 Lattice based codes come with the chalenge of finding the nearest lattice point or a shortest basis for a given lattice. Both problems and their approximate adequates have been solved with NP-hard algorithms only. Given they are one of the longest known public key crypto systems, \todo{cite story of lattice codes} they can be fairly seen as the most promising post quantum crypto approaches. However, due to their significantly bigger key sizes \todo{cite typical key sizes} they've not been as thoroughly researched and applied as \textsc{RSA} or \textsc{El Gamal}. \cite{IMC} 
