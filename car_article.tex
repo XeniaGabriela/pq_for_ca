@@ -152,6 +152,7 @@ The latest performance improved hash-based signature scheme is SPHINCS\textsuper
 \Todo{I would like to mention it to give an overview of what is actually being considered. It was a well considered topic at the PQCrypto Conference 2017 and Microsoft e.g. published an experimental VPN version with isogeny based crypto.}
 
 \Ueberschriftu{Lattice-Based}
+Lattice based codes come with the chalenge of finding the nearest lattice point or a shortest basis for a given lattice. Both problems and their approximate adequates have been solved with NP-hard algorithms only. Given they are one of the longest known public key crypto systems, \todo{cite story of lattice codes} they can be fairly seen as the most promising post quantum crypto approaches. However, due to their significantly bigger key sizes \todo{cite typical key sizes} they've not been as thoroughly researched and applied as \textsc{RSA} or \textsc{El Gamal}. \cite{IMC} 
 Most used and implemented methods so far - mostly used is NTRU. NewHope seems to be a very interesting thing...
 Potentially the first one was knapsack or subsetsum by Merkle and Hellman using superincreasing list of integers obfuscated by modulo  - can be formulated and broken as finding smallest vector in a lattice. see silverman page 359
 NTRU seems to be the first successful and still out there algorithm.
