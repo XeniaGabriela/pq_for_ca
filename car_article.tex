@@ -124,7 +124,7 @@ $$ G^\prime = SGP $$
 where $S$, a $(k \times k)$ matrix, functions as a scrambler and $P$ is a $(n \times n)$ permutation matrix. Parameters proposed by \textsc{McEliece} \cite{MCE} result in a public key of $2^{16}$ bytes size. The most effective attacks on \textsc{McEliece} use information-set decoding. To resist those in a quantum computing context, key sizes have to be increased by a factor of 4.\\
 \\
 The \textsc{Niederreiter} scheme \cite{NR} applies the same idea to a parity check matrix $H$ of a linear code. The encryption is about ten times faster than McEliece.  McEliece was originally believed not to be usable for authentication or signature schemes because the encryption algorithm is not one-to-one and the total algorithm is truly asymmetric, meaning, encryption and decryption do not commute. However, a one-time signature scheme based on \textsc{McEliece} and \textsc{Niederreiter} was 
-proposed at the Asiacrypt in $2001$ \cite{CFS}: 
+proposed at the Asiacrypt in $2001$ \cite{CFS}: \\
 
 \begin{itemize} [noitemsep, nolistsep]
 \item[1)] Choose a hash function $h$  and compute the hash value $h(d)$ of the document $d$ which has to be be signed
@@ -136,7 +136,7 @@ proposed at the Asiacrypt in $2001$ \cite{CFS}:
 \noindent
 As the second step in the signature scheme almost always fails, the system additionally specifies a deterministic way of tweaking $d$ until a hash value $h(d)$ is found which can be decrypted. Verification then applies the public encryption function to the signature to the signature and compares it to the hash value of the document. \\
 \\
-Another simple, secure and efficient code-based key exchange protocol is \textsc{Ouroboros} \cite{OUR}. The encryption algorithm uses Quasi-Cyclic Codes in Hamming metric, efficient decoding is achieved through BitFlipping. Encryption and decryption are faster than RSA for comparative benchmarks (https://bench.cr.yp.to). Ouroboros' integration into the OpenSSL/TLS library is planned and it is proposed as post-quantum secure algorithm at the NIST.
+The most recently published code-based key exchange protocol is \textsc{Ouroboros} \cite{OUR}. It uses quasi-cyclic codes in Hamming metric in the encryption algorithm, efficient decoding is achieved through BitFlipping in the Random Oracle Model. Encryption and decryption are faster than RSA for comparative benchmarks (https://bench.cr.yp.to). Ouroboros' integration into the OpenSSL/TLS library is planned and it is proposed as post-quantum secure algorithm at the NIST.
 
 \Ueberschriftu{Hash-Based}
 This domain is limited to digital signatures schemes which rely exclusively on the security of the underlying hash functions so far. The signatures themselves reveal a part of the signing key and can only be used for one message, same as it is known from one-time pads such as visual cryptography shares. \\
@@ -147,7 +147,7 @@ Hereby, the number of possibilities for such signatures are all possible combina
 The latest performance improved hash-based signature scheme is \textsc{SPHINCS\textsuperscript{+}}\cite{SPH+}, the advanced \textsc{SPHINCS} \cite{SPH} scheme which was presented at EUROCRYPT 2015. Unlike its predecessors, XMSS and LMS, it is stateless, meaning that signing doesn't require updating the secret key. It is a so called few-times scheme, where "few" means as much as $2^{64}$. Its signature sizes range from 8kb for NIST security level 1 to 30kb for NIST security level 5.\\
 
 \Ueberschriftu{Isogeny-Based}
-\Todo{Good Idea as outlook!} One of the latest and most challenging pq crypto ideas is the application of Isogeny based encryption schemes. There are alread first applications, as e.g. Microsofts VPN-client. \todo{cite openvpn from MS}
+\Todo{Good Idea as outlook!} One of the latest and most challenging pq crypto ideas is the application of Isogeny based encryption schemes. There are already first applications, as e.g. Microsofts VPN-client. \todo{cite openvpn from MS}
 
 %\Todo{I would like to mention it to give an overview of what is actually being considered. It was a well considered topic at the PQCrypto Conference 2017 and Microsoft e.g. published an experimental VPN version with isogeny based crypto.}
 % agreed - it is one of the interesting new things, that we should mention.
@@ -162,8 +162,16 @@ NTRU seems to be the first successful and still out there algorithm.
 Have to speak about NTRU (Silverman), GGH, NTRU prime and new hope!  and mention LLL --> BKZ which came out in 1982 (see silverman 406)
 \Todo{rewrite section}
 
-\Ueberschriftu{Multivariate}
 
+\Ueberschriftu{Multivariate}
+\noindent
+The proven NP-hardness or NP-completeness of multivariate polynomial equations over a finite field $F$ are the reason why schemes with those asymmetric cryptographic primitives are considered candidates for post-quantum security. Most of the published schemes use multivariate quadratics, namely polynomials of degree two.
+The basic scheme consists of two affine transformations $S: F^n \rightarrow F^n$ and $T: F^m \rightarrow F^m$ and an easy to invert quadratic map $P^{\prime} : F^m \rightarrow F^n$. The trapdoor $(S^{-1}, P^{\prime^{-1}}, T^{-1})$ represents the private key, whithout which the public key $P = S \circ P^{\prime} \circ T$ is assumed to be hard to invert.\\ 
+\\
+A first multivariate quadratic scheme, $C^*$ \cite{MI}, was presented at the \textsc{Eurocrypt Conference} 1988. After it was broken \cite{P95}, the general principal was used for stronger schemes, such as \textsc{Hidden Field Equations} \cite{HFE} and \textsc{QUAD} \cite{BGP}. \\
+\\
+Multivariate signature schemes provide the shortest signatures amongst post-quantum algorithms (\textsc{Gui} \cite{GUI} 129 bit over $GF(2)$ for a quantum security level of 80 bit). The signature $x$ of a message $m$ is created by hashing $m$ into a vector $y \in F^n$ and computing $x = P^{-1}(y) = T^{-1} (P^{\prime}(S^{-1}(y)))$. The receiver can simply compute the hash $y$ and check if $P(x) = y$. \\
+\textsc{Medium Field Signature Schemes} \cite{HMFE} with fewer equations and variables in the public key offer  a further reduction in key sizes, greater efficiency and scalable levels of security. A proposal is submitted to the NIST standardization process of post-quantum signature schemes.
 
 %%% For figures
 %\begin{figurehere}
@@ -191,31 +199,62 @@ H.~Niederreiter.
 \newblock {\em Problems of Control and Information Theory}, 1886.
 
 \bibitem{CFS}
-N.~T.~Courtois, M.~Finiasz, and N.~Sendrier.
+N.~T.~Courtois, M.~Finiasz and N.~Sendrier.
 \newblock How to Achieve a McEliece-Based Digital Signature Scheme,
 \newblock {\em Asiacrypt}, 2001.
 
 \bibitem{OUR}
-....
-\newblock ...,
-\newblock {\em ...}, ....
+J.~C.~Deneuveville, P.~Gaborit and G.~Zémor.
+\newblock A Simple, Secure and Efficient Key Exchange Protocol Based on Coding Theory,
+\newblock {\em Springer, Post-Quantum Cryptography - PQCrypto 2017}
 
 \bibitem
 {SPH+}
-J.~Rijneveld , S.~Kölbl.
+J.~Rijneveld and S.~Kölbl.
 \newblock The SPHINCS\textsuperscript{+} reference code,
 \newblock {\em https://github.com/sphincs/sphincsplus}.
 
 \bibitem
 {SPH}
-D.~J.~Bernstein, D.~Hopwood, A.~Hülsing, T.~Lange, R.~Niederhagen, L.~Papachristodoulou, M.~Schneider, P.~Schwabe, Z.~ Wilcox-O’Hearn.
+D.~J.~Bernstein, D.~Hopwood, A.~Hülsing, T.~Lange, R.~Niederhagen, L.~Papachristodoulou, M.~Schneider, P.~Schwabe and Z.~ Wilcox-O’Hearn.
 \newblock SPHINCS: practical stateless hash-based signatures,
 \newblock {\em Springer, Advances in Cryptology - EUROCRYPT 2015}.
 
 \bibitem{IMC}
-J.~Hoffstein, J.~Pipher, and J.~H.~Silverman.
+J.~Hoffstein, J.~Pipher and J.~H.~Silverman.
 \newblock An Introduction to Mathematical Cryptography,
 \newblock {\em Springer Science+Business Media}, 2008.
+
+\bibitem{MI}
+T.~Matsumoto and H.~Imai.
+\newblock Public Quadratic Polynomial-Tuples for Efficient Signature-Verification and Message-Encryption,
+\newblock {\em EUROCRYPT 1988}.
+
+\bibitem{P95}
+J.~Patarin.
+\newblock Cryptanalysis of the Matsumoto and Imai Public Key Scheme of Eurocrypt '8,
+\newblock {\em Springer CRYPTO '95'}.
+
+\bibitem{HFE}
+J.~Patarin.
+\newblock Hidden Field Equations and Isomorphisms of Polynomials: Two New Families of Asymmetric Algorithms,
+\newblock {\em EUROCRYPT 1996}.
+
+\bibitem{BGP}
+C.~Berbain, H.~Gilbert and J.~Patarin.
+\newblock A Practical Stream Cipher with Provable Security,
+\newblock {\em Springer, Advances in Cryptology - EUROCRYPT 2006}.
+
+\bibitem{GUI}
+M.~S.~E.~Mohamed and A.~Petzoldt.
+\newblock The Shortest Signatures Ever,
+\newblock {\em TU Darmstadt, Germany and Kyushu University, Fukuoka Japan}, 2015.
+
+\bibitem{HMFE}
+A.~Petzoldt, M.~-S.~Chen, J.~Ding and B.~-Y.~Yang.
+\newblock HMFEv - An Efficient Multivariate Signature Scheme,
+\newblock {\em Springer, Post-Quantum Cryptography - PQCrypto 2017}.
+
 
 \end{thebibliography}
 
