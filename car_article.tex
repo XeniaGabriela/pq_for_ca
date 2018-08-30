@@ -154,14 +154,17 @@ The latest performance improved hash-based signature scheme is \textsc{SPHINCS\t
 
 
 \Ueberschriftu{Lattice-Based}
-Lattice based codes come with the challenge of finding the nearest lattice point or a shortest basis for a given lattice. Both problems and their approximate adequates have been solved with NP-hard algorithms only. Given they are one of the longest known public key crypto systems, \todo{cite story of lattice codes} they can be fairly seen as the most promising post quantum crypto approaches. However, due to their significantly bigger key sizes \todo{cite typical key sizes} they've not been as thoroughly researched and applied as \textsc{RSA} or \textsc{El Gamal}. \cite{IMC} 
-Most used and implemented methods so far - mostly used is NTRU. NewHope seems to be a very interesting thing...
-Potentially the first one was knapsack or subsetsum by Merkle and Hellman using superincreasing list of integers obfuscated by modulo  - can be formulated and broken as finding smallest vector in a lattice. see silverman page 359
-NTRU seems to be the first successful and still out there algorithm.
-
-Have to speak about NTRU (Silverman), GGH, NTRU prime and new hope!  and mention LLL --> BKZ which came out in 1982 (see silverman 406)
-\Todo{rewrite section}
-
+Lattice based codes come with the challenge of finding the nearest lattice point or a shortest basis for a given lattice. Both problems and their approximate adequates have been solved with NP-hard algorithms only. Given they are one of the longest known public key crypto systems, they can be fairly seen as the most promising post quantum crypto approaches. Low memory requirements and high speed computations let them run effectively on all currently widely used devices. However, due to their significantly bigger key sizes they had not been as thoroughly researched and applied as \textsc{RSA} or \textsc{El Gamal}. \cite{IMC} \\
+\\
+\textsc{NTRU} was the first successful lattice-based asymmetric cryptosystem which was proposed and patented 1996 \cite{NTR}. With the expiration of the patent in 2016, an improvement by eliminating worrisome algebraic structure \textsc{NTRU} Prime \cite{NTP} could be published. Their security stem from the interaction of a polynomial mixing system with the independence of reduction modulo two relatively prime integers $p$ and $q$. \\
+\\
+Another base for lattice-based algorithms is the Learning with Errors (LWE) problem. It was used in \textsc{BCNS} \cite{BCN} which phrased Peikerts key encapsulation algorithm as key exchange protocol. This key exchange was integrated into the OpenSSL library. \\
+\\
+With \textsc{New Hope} \cite{NHP} an improvement was achieved by chosing more efficient parameters and integrating Ring Learning with Errors (RLWE). The algorithm allows man in the middle attacks, message authentication has to be implemented additionally. Google ran an experimental phase by using \textsc{New Hope} embedded in an ECC procedure for a certain number off connections between the Chrome browser and the google servers in 2016. Infineon works on the first generation of contactless post-quantum chips with Pöppelmann.
+\\
+\textsc{Dilithium} \cite{DLM}, a module-lattice based signature scheme was designed to be easy to implement against side channel attacks, while offering comparable efficiency to previously developed lattice-based signature schemes.\\
+\\
+All these algorithms except \textsc{BCNS} are submitted to the NIST post-quantum cryptography standardization process.
 
 \Ueberschriftu{Multivariate}
 \noindent
@@ -225,10 +228,32 @@ J.~Hoffstein, J.~Pipher and J.~H.~Silverman.
 \newblock An Introduction to Mathematical Cryptography,
 \newblock {\em Springer Science+Business Media}, 2008.
 
-\bibitem{MI}
-T.~Matsumoto and H.~Imai.
-\newblock Public Quadratic Polynomial-Tuples for Efficient Signature-Verification and Message-Encryption,
-\newblock {\em EUROCRYPT 1988}.
+\bibitem{NTR}
+J.~Hoffstein, J.~Pipher and J.~H.~Silverman.
+\newblock NTRU: A Ring-Based Public Key Cryptosystem,
+\newblock {\em SpringerLink International Number Theory Symposium}, 1998.
+
+\bibitem{NTP}
+D.~Bernstein, C.~Chuengsatiansup, T.~Lange and C.~van Vredendaal.
+\newblock NTRU Prime: reducing attack surface at low cost,
+\newblock {\em Cryptology ePrint Archive 2017}.
+
+\bibitem{BCN}
+J.~W.~Bos, C.~Costello, M.~Naehrig, and A.~D.~Stebila.
+\newblock Post-quantum key exchange for the TLS protocol from the ring
+learning with errors problem,
+\newblock {\em Proceedings of the forty-fifth annual ACM symposium on Theory
+of computing}, 2013.
+
+\bibitem{NHP}
+E.~Alkim, L.~Ducas, T.~Pöppelmann and P.~Schwabe.
+\newblock Post-quantum key exchange – a new hope,
+\newblock {\em IEEE Security \& Privacy 2015}.
+
+\bibitem{DLM}
+L.~Ducas, T.~Lepoint, V.~Lyubashevsky, P.~Schwabe, G.~Seiler and D.~Stehlé.
+\newblock CRYSTALS - Dilithium: Digital Signatures from Module Lattices,
+\newblock {\em Cryptology ePrint Archive 2017}.
 
 \bibitem{P95}
 J.~Patarin.
