@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.6)  30 AUG 2018 19:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.6)  30 AUG 2018 23:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1517,62 +1517,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 141--148
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 141--148
-
- []
-
 [2]
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 150.
-
-Underfull \hbox (badness 10000) in paragraph at lines 156--168
+Underfull \hbox (badness 10000) in paragraph at lines 150--161
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--168
+Underfull \hbox (badness 10000) in paragraph at lines 150--161
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--168
+Underfull \hbox (badness 10000) in paragraph at lines 150--161
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--168
+Underfull \hbox (badness 10000) in paragraph at lines 150--161
 
  []
 
 
-LaTeX Warning: Citation `MI' on page 3 undefined on input line 174.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--178
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--178
+Underfull \hbox (badness 10000) in paragraph at lines 169--176
 
  []
 
 [3]
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 186.
-
-Underfull \hbox (badness 6268) in paragraph at lines 222--225
+Underfull \hbox (badness 6268) in paragraph at lines 224--227
 []\T1/ptm/m/n/10.95 D. J. Bern-stein, D. Hop-wood, A. Hüls-ing,
  []
 
 
-Underfull \hbox (badness 7451) in paragraph at lines 249--252
+Underfull \hbox (badness 7451) in paragraph at lines 251--254
 []\T1/ptm/m/n/10.95 E. Alkim, L. Ducas, T. Pöp-pel-mann and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--257
+Underfull \hbox (badness 10000) in paragraph at lines 256--259
 []\T1/ptm/m/n/10.95 L. Ducas, T. Le-p-oint, V. Lyuba-shevsky,
  []
 
@@ -1580,34 +1561,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 254--257
 \openout9 = `car_article.thm'.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 296.
+(babel)             in language  on input line 303.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 296.
+(babel)             in language  on input line 303.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 296.
+(babel)             in language  on input line 303.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 296.
-[4
-
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 296.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 296.
+(babel)             in language  on input line 303.
+[4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 303.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 303.
  (./car_article.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 296.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 296.
-
-
-LaTeX Warning: There were undefined references.
-
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 303.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 303.
  ) 
 Here is how much of TeX's memory you used:
- 25976 strings out of 494328
- 484039 string characters out of 6162816
- 587540 words of memory out of 5000000
- 28762 multiletter control sequences out of 15000+600000
- 46009 words of font info for 66 fonts, out of 8000000 for 9000
+ 25954 strings out of 494328
+ 483784 string characters out of 6162816
+ 590442 words of memory out of 5000000
+ 28744 multiletter control sequences out of 15000+600000
+ 37243 words of font info for 55 fonts, out of 8000000 for 9000
  353 hyphenation exceptions out of 8191
- 55i,5n,75p,1020b,613s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,5n,75p,1020b,600s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/
@@ -1616,15 +1591,14 @@ ype1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/urw/times/utmri8a.pfb>
-Output written on car_article.pdf (4 pages, 149241 bytes).
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/urw/times/utmri8a.pfb>
+Output written on car_article.pdf (4 pages, 142465 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
+ 71 PDF objects out of 1000 (max. 8388607)
+ 50 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
