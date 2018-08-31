@@ -124,7 +124,7 @@ proposed at the Asiacrypt in $2001$ \cite{CFS}: \\
 \noindent
 As the second step in the signature scheme almost always fails, the system additionally specifies a deterministic way of tweaking $d$ until a hash value $h(d)$ is found which can be decrypted. Verification then applies the public encryption function to the signature to the signature and compares it to the hash value of the document. \\
 \\
-The most recently published code-based key exchange protocol is \textsc{Ouroboros} \cite{OUR}. It uses quasi-cyclic codes in Hamming metric in the encryption algorithm, efficient decoding is achieved through BitFlipping in the Random Oracle Model. Encryption and decryption are faster than RSA for comparative benchmarks (https://bench.cr.yp.to). Ouroboros' integration into the OpenSSL/TLS library is planned and it is proposed as post-quantum secure algorithm at the NIST.
+The most recently published code-based key exchange protocol is \textsc{Ouroboros} \cite{OUR}. It uses quasi-cyclic codes in Hamming metric in the encryption algorithm, efficient decoding is achieved through bit flipping in the Random Oracle Model. Encryption and decryption are faster than RSA for comparative benchmarks (https://bench.cr.yp.to). Ouroboros' integration into the OpenSSL/TLS library is planned and it is proposed as post-quantum secure algorithm at the NIST.
 
 \Ueberschriftu{Hash-Based}
 This domain is limited to digital signatures schemes which rely exclusively on the security of the underlying hash functions so far. The signatures themselves reveal a part of the signing key and can only be used for one message, same as it is known from one-time pads such as visual cryptography shares. \\
