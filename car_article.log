@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.6)  30 AUG 2018 23:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.6)  1 SEP 2018 18:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -721,7 +721,6 @@ Now handling font encoding PD1 ...
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `draft' set `true' on input line 4319.
 Package hyperref Info: Hyper figures OFF on input line 4443.
 Package hyperref Info: Link nesting OFF on input line 4448.
 Package hyperref Info: Hyper index ON on input line 4451.
@@ -1374,21 +1373,21 @@ Package: todo 2010/03/31 v2.4142 To-do list (Federico Garcia)
 ) (./car_article.aux)
 \openout1 = `car_article.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -1422,11 +1421,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box86
+Package hyperref Info: Link coloring OFF on input line 9.
 
-
-Package hyperref Warning: Draft mode on.
-
-Package hyperref Info: Link coloring OFF on input line 21.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -1435,154 +1431,290 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count274
 )
-LaTeX Info: Redefining \ref on input line 21.
-LaTeX Info: Redefining \pageref on input line 21.
-LaTeX Info: Redefining \nameref on input line 21.
+LaTeX Info: Redefining \ref on input line 9.
+LaTeX Info: Redefining \pageref on input line 9.
+LaTeX Info: Redefining \nameref on input line 9.
+
+(./car_article.out) (./car_article.out)
+\@outlinefile=\write9
+\openout9 = `car_article.out'.
+
 \c@lstlisting=\count275
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-
-ABD: EveryShipout initializing macros
+ ABD: EveryShipout initializing macros
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 35.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 23.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 23.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 23.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 57.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 57.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 45.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 45.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Underfull \hbox (badness 1960) in paragraph at lines 57--57
+Underfull \hbox (badness 1960) in paragraph at lines 45--45
 []\T1/ptm/b/n/14.4 Post-Quantum Se-cu-re Cryp-to-gra-phic Al-go-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--57
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
 
  []
 
-<./xenia.jpg, id=4, 1027.84pt x 1027.84pt>
-<./jochen.jpg, id=5, 1027.84pt x 1027.84pt>
-Underfull \hbox (badness 10000) in paragraph at lines 77--80
+<./xenia.jpg, id=9, 1027.84pt x 1027.84pt>
+File: ./xenia.jpg Graphic file (type jpg)
+ <use ./xenia.jpg>
+Package pdftex.def Info: ./xenia.jpg used on input line 45.
+(pdftex.def)             Requested size: 128.02486pt x 128.0374pt.
+
+<./jochen.jpg, id=10, 1027.84pt x 1027.84pt>
+File: ./jochen.jpg Graphic file (type jpg)
+ <use ./jochen.jpg>
+Package pdftex.def Info: ./jochen.jpg used on input line 45.
+(pdftex.def)             Requested size: 128.02486pt x 128.0374pt.
+
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 45.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 45.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 45.
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--68
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--92
+LaTeX Warning: Citation `IEEESpec' on page 1 undefined on input line 72.
+
+
+LaTeX Warning: Citation `googleai' on page 1 undefined on input line 72.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--101
+Underfull \hbox (badness 10000) in paragraph at lines 83--89
 
  []
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 107--111
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./xenia.jpg> <./jochen.jpg
+>]
+Underfull \hbox (badness 10000) in paragraph at lines 95--99
 
  []
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 120.
+LaTeX Font Info:    Try loading font information for U+msa on input line 108.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 120.
+LaTeX Font Info:    Try loading font information for U+msb on input line 108.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 122--128
+
+LaTeX Warning: Citation `MCE' on page 2 undefined on input line 112.
+
+
+LaTeX Warning: Citation `NR' on page 2 undefined on input line 114.
+
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 114.
+
+LaTeX Warning: Reference `todolbl:1' on page 2 undefined on input line 114.
+
+
+LaTeX Warning: Citation `CFS' on page 2 undefined on input line 115.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--128
+Underfull \hbox (badness 7796) in paragraph at lines 110--116
+\T1/ptm/m/n/10.95 The en-cryp-tion is about ten times faster than
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--140
+LaTeX Warning: Citation `OUR' on page 2 undefined on input line 127.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--128
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--148
+LaTeX Warning: Citation `SPH+' on page 2 undefined on input line 135.
+
+
+LaTeX Warning: Citation `SPH' on page 2 undefined on input line 135.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--148
+Underfull \hbox (badness 10000) in paragraph at lines 129--136
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 150--161
+
+LaTeX Warning: Citation `IMC' on page 3 undefined on input line 139.
+
+
+LaTeX Warning: Citation `NTR' on page 3 undefined on input line 141.
+
+
+LaTeX Warning: Citation `NTP' on page 3 undefined on input line 141.
+
+
+LaTeX Warning: Citation `BCN' on page 3 undefined on input line 143.
+
+
+LaTeX Warning: Citation `NHP' on page 3 undefined on input line 144.
+
+
+LaTeX Warning: Citation `DLM' on page 3 undefined on input line 146.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--149
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--161
+Underfull \hbox (badness 10000) in paragraph at lines 138--149
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--161
+Underfull \hbox (badness 10000) in paragraph at lines 138--149
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--161
+Underfull \hbox (badness 6428) in paragraph at lines 138--149
+\T1/ptm/m/sc/10.95 Dilithium \T1/ptm/m/n/10.95 [[]], a module-lattice-based sig
+-na-ture
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--149
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--176
+LaTeX Warning: Citation `MI' on page 3 undefined on input line 160.
+
+
+LaTeX Warning: Citation `P95' on page 3 undefined on input line 160.
+
+
+LaTeX Warning: Citation `HFE' on page 3 undefined on input line 160.
+
+
+LaTeX Warning: Citation `BGP' on page 3 undefined on input line 160.
+
+
+LaTeX Warning: Citation `GUI' on page 3 undefined on input line 162.
+
+
+LaTeX Warning: Citation `HMFE' on page 3 undefined on input line 163.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--164
 
  []
 
 [3]
-Underfull \hbox (badness 6268) in paragraph at lines 224--227
+Underfull \hbox (badness 6268) in paragraph at lines 214--217
 []\T1/ptm/m/n/10.95 D. J. Bern-stein, D. Hop-wood, A. Hüls-ing,
  []
 
 
-Underfull \hbox (badness 7451) in paragraph at lines 251--254
+Underfull \hbox (badness 7451) in paragraph at lines 241--244
 []\T1/ptm/m/n/10.95 E. Alkim, L. Ducas, T. Pöp-pel-mann and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--259
+Underfull \hbox (badness 10000) in paragraph at lines 246--249
 []\T1/ptm/m/n/10.95 L. Ducas, T. Le-p-oint, V. Lyuba-shevsky,
  []
 
-\tf@thm=\write9
-\openout9 = `car_article.thm'.
+
+Underfull \hbox (badness 5331) in paragraph at lines 281--284
+\T1/ptm/m/n/10.95 uary 9, 2018  https://spectrum.ieee.org/tech-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--284
+\T1/ptm/m/n/10.95 talk/computing/hardware/intels-49qubit-chip-aims-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--289
+\T1/ptm/m/n/10.95 https://ai.googleblog.com/2018/03/a-preview-of-
+ []
+
+\tf@thm=\write10
+\openout10 = `car_article.thm'.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 303.
+(babel)             in language  on input line 302.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 303.
+(babel)             in language  on input line 302.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 303.
+(babel)             in language  on input line 302.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 303.
+(babel)             in language  on input line 302.
 [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 303.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 303.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 302.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 302.
  (./car_article.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 303.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 303.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 302.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 302.
+
+
+Package rerunfilecheck Warning: File `car_article.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `car_article.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  186566DE529A7EA7F0DC8F182BC00F59;175.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 25954 strings out of 494328
- 483784 string characters out of 6162816
- 590442 words of memory out of 5000000
- 28744 multiletter control sequences out of 15000+600000
- 37243 words of font info for 55 fonts, out of 8000000 for 9000
+ 25995 strings out of 494328
+ 484157 string characters out of 6162816
+ 592243 words of memory out of 5000000
+ 28751 multiletter control sequences out of 15000+600000
+ 40046 words of font info for 57 fonts, out of 8000000 for 9000
  353 hyphenation exceptions out of 8191
- 55i,5n,75p,1020b,600s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,6n,75p,1020b,613s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/
@@ -1595,10 +1727,10 @@ m/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8
 are/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on car_article.pdf (4 pages, 142465 bytes).
+Output written on car_article.pdf (4 pages, 441200 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
+ 110 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
+ 29 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
