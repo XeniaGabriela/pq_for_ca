@@ -111,7 +111,7 @@ $$ G^\prime = SGP $$
 \\
 where $S$, a $(k \times k)$ matrix, functions as a scrambler and $P$ is a $(n \times n)$ permutation matrix. Parameters proposed by \textsc{McEliece} \cite{MCE} result in a public key of $2^{16}$ bytes size. The most effective attacks on \textsc{McEliece} use information-set decoding. To resist those in a quantum computing context, key sizes have to be increased by a factor of 4.\\
 \\
-The \textsc{Niederreiter} scheme \cite{NR} applies the same idea to a parity check matrix $H$ of a linear code. The encryption is about ten times faster than McEliece.\Todo{proof or quote?}  McEliece was originally believed not to be usable for authentication or signature schemes because the encryption algorithm is not one-to-one and the total algorithm is truly asymmetric, meaning, encryption and decryption do not commute. However, a one-time signature scheme based on \textsc{McEliece} and \textsc{Niederreiter} was 
+The \textsc{Niederreiter} scheme \cite{NR} applies the same idea to a parity check matrix $H$ of a linear code. The encryption is about ten times faster than McEliece. McEliece was originally believed not to be usable for authentication or signature schemes because the encryption algorithm is not one-to-one and the total algorithm is truly asymmetric, meaning, encryption and decryption do not commute. However, a one-time signature scheme based on \textsc{McEliece} and \textsc{Niederreiter} was 
 proposed at the Asiacrypt in $2001$ \cite{CFS}: \\
 
 \begin{itemize} [noitemsep, nolistsep]
