@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.6)  10 SEP 2018 23:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.6)  11 SEP 2018 21:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1632,6 +1632,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 271--274
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 276--279
+\T1/ptm/m/n/10.95 Polynomial-Tuples for Ef-fi-cient Signature-
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 306--309
 []\T1/ptm/m/n/10.95 Microsoft Re-search Se-cu-rity and Cryp-tog-
  []
@@ -1659,12 +1664,12 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 322.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 322.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 322.
 Package rerunfilecheck Info: File `car_article.out' has not changed.
-(rerunfilecheck)             Checksum: 186566DE529A7EA7F0DC8F182BC00F59;175.
+(rerunfilecheck)             Checksum: EF7672319FF495091AD39BC5EF44DF27;213.
  ) 
 Here is how much of TeX's memory you used:
  25997 strings out of 494328
  484155 string characters out of 6162816
- 583035 words of memory out of 5000000
+ 584035 words of memory out of 5000000
  28752 multiletter control sequences out of 15000+600000
  37243 words of font info for 55 fonts, out of 8000000 for 9000
  353 hyphenation exceptions out of 8191
@@ -1681,7 +1686,7 @@ m/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8
 are/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on car_article.pdf (5 pages, 444845 bytes).
+Output written on car_article.pdf (5 pages, 444827 bytes).
 PDF statistics:
  146 PDF objects out of 1000 (max. 8388607)
  123 compressed objects within 2 object streams
