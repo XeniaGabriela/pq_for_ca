@@ -69,14 +69,14 @@ Luckily scientific researchers have specialized in the examinations of the vario
 % The command \Ueberschriftu{Title} produces a subsection
 \Ueberschriftu{Quantum Technologies}
 Quantum-mechanical phenomena, such as superposition and entanglement, are used for communication, computing, sensoring and simulation. While communication, sensoring and simulation have been realized in publicly announced projects or products, quantum computing was only a matter of research until last november. \\
-With the advent of 49 qubit processors quantum supremacy lies within reach, i.e. the potential ability of quantum computing devices to solve problems that classical computers practically cannot solve\cite{IEEESpec, googleai}. IBM has announced to have built a 50 qubit prototype, Google participates in the race with their new record-breaking 72-qubit quantum processor Bristlecone.
+With the advent of 49 qubit processors quantum supremacy lies within reach, i.e. the potential ability of quantum computing devices to solve problems that classical computers practically cannot solve \cite{IEEESpec, googleai}. IBM has announced to have built a 50 qubit prototype, Google participates in the race with their new record-breaking 72-qubit quantum processor Bristlecone.
 
 \Ueberschriftu{Benefits}
-Quantum technologies offer and promise major benefits. So called adiabatic quantum computers, e.g. the D-Wave 2000Q with 2048 qubits from D-Wave Systems in Canada are able to solve optimization problems that would overburden a classical computer. Photon based quantum key distribution devices from ID Quantique in Switzerland are used by the government in Geneva. China has built a 2000km quantum communication channel between Beijing and Shanghai for banks, the Xinhua News Agency and the government, whose nodes receive keys from their quantum communication satellite. Last year they denoted feasible distances up to 1200 km. \\
+Quantum technologies offer and promise major benefits. So called adiabatic quantum computers, e.g. the D-Wave 2000Q with 2048 qubits from D-Wave Systems in Canada are able to solve optimization problems that would overburden a classical computer. Photon based quantum key distribution devices from ID Quantique in Switzerland are used by the government in Geneva and other institutions. China has built the 2000km quantum communication channel QUESS between Beijing and Shanghai for banks, the Xinhua News Agency and the government, whose nodes receive keys from their quantum communication satellite. Last year they denoted feasible distances up to 1200 km. \\
 In the future quantum computers with enough stable qubits are expected to be able to help building complex materials as well as solve medical and environmental problems amongst other things.
 
 \Ueberschriftu{Threats}
-It is long known that the security of currently used cryptographic algorithms relying on the hardness of integer factorization and finding discrete logarithms (DLOG systems) \cite{SHO} will expire with potent enough quantum computers. All public parameters like public keys from asymmetric key pairs and collected key exchanges with the following exchanged data can be used to decrypt data which is meant to be secret. \\
+It is long known that the security of currently used cryptographic algorithms relying on the hardness of integer factorization and finding discrete logarithms (DLOG systems) \cite{SHO} will expire with potent enough quantum computers. All public parameters like public keys from asymmetric key pairs can then be used to compute the corresponding private keys. With the knowledge of those private keys, encrypted data which was collected and assigned to the relevant key exchanges, will no longer remain secret. For technologies like public distributed ledgers, where encrypted data is publicly available, this threat is even more serious. \\
 
 \Ueberschrift{Solutions}{solutions}
 
@@ -160,6 +160,7 @@ The trapdoor $(S^{-1}, P^{\prime^{-1}}, T^{-1})$ represents the private key, whi
 A first multivariate quadratic scheme, $C^*$ \cite{MI}, was presented at the \textsc{Eurocrypt Conference} 1988. After it was broken \cite{P95}, the general principal was used for stronger schemes, such as \textsc{Hidden Field Equations} \cite{HFE} and \textsc{QUAD} \cite{BGP}. \\
 \\
 Multivariate signature schemes provide the shortest signatures amongst post-quantum algorithms (\textsc{Gui} \cite{GUI} 129 bit over $GF(2)$ for a quantum security level of 80 bit). The signature $x$ of a message $m$ is created by hashing $m$ into a vector $y \in F^n$ and computing $x = P^{-1}(y) = T^{-1} (P^{\prime}(S^{-1}(y)))$. The receiver can simply compute the hash $y$ and check if $P(x) = y$. \\
+\\
 \textsc{Medium Field Signature Schemes} \cite{HMFE} with fewer equations and variables in the public key offer  a further reduction in key sizes, greater efficiency and scalable levels of security. A proposal is submitted to the NIST standardization process of post-quantum signature schemes.
 
 \Ueberschriftu{Isogeny-Based}
@@ -174,7 +175,7 @@ Paramater choices are much more delicate for post-quantum crypto schemes than th
 \\
 It will not only be a challenge to distinguish and weigh the complex influences on security of post-quantum encryption schemes, there will also be an increased need of cooperations between mathematicians, computer scientists and programmers to mitigate flaws in implementations, configurations and applications. \\
 \\
-For someone who is not familiar with the concept of a mathematical conjecture, it is hard to understand on what ground the security of cryptography is built and what time can do to it, with or without regard to emerging technologies. Who can say for sure that there is no-one who generates one RSA key pair after another since decades and stores them in a huge database where he can simply assign a private key to public key if it is present in his own ollection? How many distinctive usable key pairs can even be expected within the range of a 4096-bit integer? 
+For someone who is not familiar with the concept of a mathematical conjecture, it is hard to understand on what ground the security of cryptography is built and what time can do to it, with or without regard to emerging technologies. Who can say for sure that there is no-one who generates one RSA key pair after another since decades and stores them in a huge database where he can simply assign a private key to its public key if it is present in his own collection? How many distinctive usable key pairs can even be expected within the range of a 4096-bit integer? 
 
 \vspace{1cm}
 
