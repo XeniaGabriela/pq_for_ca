@@ -2,3 +2,5 @@
 *.pdf
 *.aux
 *.thm
+*.out
+/auto
