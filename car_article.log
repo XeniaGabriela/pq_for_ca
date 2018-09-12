@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.6)  11 SEP 2018 21:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.6)  12 SEP 2018 08:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1567,82 +1567,87 @@ Underfull \hbox (badness 10000) in paragraph at lines 137--149
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--164
+Underfull \hbox (badness 10000) in paragraph at lines 157--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--165
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 165--171
+Underfull \hbox (badness 10000) in paragraph at lines 166--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--171
+Underfull \hbox (badness 10000) in paragraph at lines 166--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--171
+Underfull \hbox (badness 10000) in paragraph at lines 166--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--178
+Underfull \hbox (badness 10000) in paragraph at lines 173--179
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--178
+Underfull \hbox (badness 10000) in paragraph at lines 173--179
 
  []
 
 
-Underfull \hbox (badness 6725) in paragraph at lines 202--205
+Underfull \hbox (badness 6725) in paragraph at lines 203--206
 []\T1/ptm/m/n/10.95 J. Hsu  Spec-trum IEEE Tech Talk, Jan-
  []
 
 
-Underfull \hbox (badness 5331) in paragraph at lines 202--205
+Underfull \hbox (badness 5331) in paragraph at lines 203--206
 \T1/ptm/m/n/10.95 uary 9, 2018  https://spectrum.ieee.org/tech-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--205
+Underfull \hbox (badness 10000) in paragraph at lines 203--206
 \T1/ptm/m/n/10.95 talk/computing/hardware/intels-49qubit-chip-aims-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--210
+Underfull \hbox (badness 10000) in paragraph at lines 208--211
 \T1/ptm/m/n/10.95 https://ai.googleblog.com/2018/03/a-preview-of-
  []
 
 
-Underfull \hbox (badness 6268) in paragraph at lines 239--242
+Underfull \hbox (badness 6268) in paragraph at lines 240--243
 []\T1/ptm/m/n/10.95 D. J. Bern-stein, D. Hop-wood, A. Hüls-ing,
  []
 
-
-Underfull \hbox (badness 7451) in paragraph at lines 266--269
+[4]
+Underfull \hbox (badness 7451) in paragraph at lines 267--270
 []\T1/ptm/m/n/10.95 E. Alkim, L. Ducas, T. Pöp-pel-mann and
  []
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 271--274
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--275
 []\T1/ptm/m/n/10.95 L. Ducas, T. Le-p-oint, V. Lyuba-shevsky,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--279
+Underfull \hbox (badness 10000) in paragraph at lines 277--280
 \T1/ptm/m/n/10.95 Polynomial-Tuples for Ef-fi-cient Signature-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 306--309
+Underfull \hbox (badness 10000) in paragraph at lines 307--310
 []\T1/ptm/m/n/10.95 Microsoft Re-search Se-cu-rity and Cryp-tog-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 306--309
+Underfull \hbox (badness 10000) in paragraph at lines 307--310
 \T1/ptm/m/n/10.95 ra-phy Group.  Mi-crosoft PQCrypto VPN,
  []
 
@@ -1650,26 +1655,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 306--309
 \openout10 = `car_article.thm'.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 322.
+(babel)             in language  on input line 323.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 322.
+(babel)             in language  on input line 323.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 322.
+(babel)             in language  on input line 323.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 322.
+(babel)             in language  on input line 323.
 [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 322.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 322.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 323.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 323.
  (./car_article.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 322.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 322.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 323.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 323.
 Package rerunfilecheck Info: File `car_article.out' has not changed.
 (rerunfilecheck)             Checksum: 186566DE529A7EA7F0DC8F182BC00F59;175.
  ) 
 Here is how much of TeX's memory you used:
  25997 strings out of 494328
  484155 string characters out of 6162816
- 583035 words of memory out of 5000000
+ 584035 words of memory out of 5000000
  28752 multiletter control sequences out of 15000+600000
  37243 words of font info for 55 fonts, out of 8000000 for 9000
  353 hyphenation exceptions out of 8191
@@ -1686,7 +1691,7 @@ m/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8
 are/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on car_article.pdf (5 pages, 444892 bytes).
+Output written on car_article.pdf (5 pages, 445148 bytes).
 PDF statistics:
  146 PDF objects out of 1000 (max. 8388607)
  123 compressed objects within 2 object streams
