@@ -52,5 +52,5 @@ The NIST standardization process of post-quantum secure algorithms has started i
 
 ## Contributors
 
-Dipl. Math. Xenia Bogomolec, X4pi GmbH
-Dr. Jochen Gerhard, BearingPoint Software Solutions GmbH
+* Dipl. Math. Xenia Bogomolec, X4pi GmbH
+* Dr. Jochen Gerhard, BearingPoint Software Solutions GmbH
