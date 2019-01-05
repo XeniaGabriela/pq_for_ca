@@ -2,9 +2,9 @@
 
 Post-Quantum Secure Cryptographic Algorithms offer security against attacks by advanced binary and quantum technologies. They cover the whole CIA-spectre:
 
-**C**onfidentiality: Key Exchanges, Encryption, Message Authentication
-**I**ntegrity: Message Authentication, Signatures
-**A**ccessibility: Effective Implementations
+* **C**onfidentiality: Key Exchanges, Encryption, Message Authentication
+* **I**ntegrity: Message Authentication, Signatures
+* **A**ccessibility: Effective Implementations
 
 The article [Post-Quantum Secure Cryptographic Algorithms](https://github.com/XeniaGabriela/pq_for_ca/car_article.pdf) outlines the state of Post-Quantum Secure Cryptographic Algorithms in 2018. It was published in the *Computeralgebra Rundbrief* in fall 2018, in order to update the community of computer algebra experts, which consists of computer scientists and mathematicians. Nevertheless it can also be used as a guideline for a suitable choice of algorithm in this area by other interested readers.
 
