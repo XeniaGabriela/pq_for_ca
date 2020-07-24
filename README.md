@@ -68,5 +68,5 @@ Therefore there will be an increased need of cooperations between mathematicians
 
 ## Authors of the Article
 
-* Dipl. Math. Xenia Bogomolec, X4pi GmbH
+* Dipl. Math. Xenia Bogomolec, Quant-X Security & Coding GmbH
 * Dr. Jochen Gerhard, BearingPoint Software Solutions GmbH
