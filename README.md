@@ -5,8 +5,8 @@
 Post-quantum secure cryptographic algorithms offer security against attacks by advanced binary and quantum technologies. They cover the whole CIA-spectre:
 
 * **C**onfidentiality: key exchanges, encryption, message authentication
-* **I**ntegrity: message authentication, signatures
-* **A**ccessibility: effective implementations on currently used devices
+* **I**ntegrity: message authentication and signatures
+* **A**vailabilty: effective implementations on currently used devices allow systems to operate efficiently while integrating post-quantum secure cryptography  
 
 ## Mathematical Ways to meet evolving Technology Threats
 
@@ -19,14 +19,16 @@ The security of post-quantum secure cryptographic algorithms relies on the hardn
 * Hash functions (signatures only)
 * Multivariate polynomials
 * Isogenies
+* Module Learning With Rounding problem (MLWR)
+* etc.
 
-Neither of them rely on the integer factorization or discrete logarithm problem.
+Neither of them rely on the integer factorization or discrete logarithm problem, for which Shor's Algorithm offers a quantum cryptanalysis.
 
 ## Necessity of Post-Quantum Cryptography
 
-The expected dawn of a new technological era has certainly begun when IBM offered their first commercially available 20-Qubit Quantum Computers November 2017. While it was still discussed if it was necessary to take quantum technology into account in the IT industry during 2017, the estimations about their capability evolvement become much more specific in 2018.
+The expected dawn of a new technological era has certainly begun when IBM offered their first commercially available 20-Qubit Quantum Computers November 2017. While it was still discussed if it was necessary to take quantum technology into account in the IT industry during 2017, the estimations about their capability evolvement become touchable every year. 
 
-With the advent of 49 qubit processors quantum supremacy lies within reach, i.e. the potential ability of quantum computing devices to solve problems that classical computers practically cannot solve. IBM has announced to have built a 50 qubit prototype, Google participates in the race with their record-breaking 72-qubit quantum processor Bristlecone.
+IBM has announced to create a 1000 qubit universal quantum processor until 2023. The ability of quantum computing devices to solve problems that classical computers practically cannot solve is no longer theory. 
 
 Luckily scientific researchers have specialized in the examinations of the various resulting challenges and questions since the beginning of this century. A series of conferences about post-quantum cryptography, the PQCrypto, started in 2006. Since 2010, they take place in another town of the world every year. The [Post-Quantum Secure Cryptographic Algorithms](https://github.com/XeniaGabriela/pq_for_ca/car_article.pdf) gives an overview of current developments in algorithmic solutions answering the upcoming threats posed by quantum computers as well as unsolved problems in the classical IT landscape.
 
@@ -69,4 +71,4 @@ Therefore there will be an increased need of cooperations between mathematicians
 ## Authors of the Article
 
 * Dipl. Math. Xenia Bogomolec, Quant-X Security & Coding GmbH
-* Dr. Jochen Gerhard, BearingPoint Software Solutions GmbH
+* Dr. Jochen Gerhard, Independent Scientific Author
