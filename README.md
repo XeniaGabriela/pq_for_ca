@@ -58,7 +58,9 @@ The article [Post-Quantum Secure Cryptographic Algorithms](https://github.com/Xe
 
 **Nevertheless it can also be used as a guideline for a suitable choice of algorithm in this area by other interested readers!**
 
-Don't hesitate to contact me for further questions: [indigomind@protonmail.ch](indigomind@protonmail.ch)
+Don't hesitate to contact us for further questions: 
+* Xenia Bogomolec: [xb@quant-x-sec.com](xb@quant-x-sec.com)
+* Jochen Gerhard: [jochen.gerhard@fias.uni-frankfurt.de](jochen.gerhard@fias.uni-frankfurt.de)
 
 ## Why was the Article published in the Context of Computer Algebra?
 
