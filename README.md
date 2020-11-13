@@ -30,7 +30,7 @@ The expected dawn of a new technological era has certainly begun when IBM offere
 
 IBM has announced to create a 1000 qubit universal quantum processor until 2023. The ability of quantum computing devices to solve problems that classical computers practically cannot solve is no longer theory. 
 
-Luckily scientific researchers have specialized in the examinations of the various resulting challenges and questions since the beginning of this century. A series of conferences about post-quantum cryptography, the PQCrypto, started in 2006. Since 2010, they take place in another town of the world every year. The [Post-Quantum Secure Cryptographic Algorithms](https://github.com/XeniaGabriela/pq_for_ca/car_article.pdf) gives an overview of current developments in algorithmic solutions answering the upcoming threats posed by quantum computers as well as unsolved problems in the classical IT landscape.
+Luckily scientific researchers have specialized in the examinations of the various resulting challenges and questions since the beginning of this century. A series of conferences about post-quantum cryptography, the PQCrypto, started in 2006. Since 2010, they take place in another town of the world every year. The article [Post-Quantum Secure Cryptographic Algorithms](https://github.com/XeniaGabriela/pq_for_ca/blob/master/car_article.pdf) gives an overview of current developments in algorithmic solutions answering the upcoming threats posed by quantum computers as well as unsolved problems in the classical IT landscape.
 
 ## Post-Quantum Cryptography vs. Quantum Key Distribution
 
@@ -54,7 +54,7 @@ The NIST standardization process of post-quantum secure algorithms has started i
 
 ## Purpose of the published Article
 
-The article [Post-Quantum Secure Cryptographic Algorithms](https://github.com/XeniaGabriela/pq_for_ca/car_article.pdf) outlines the state of post-quantum secure cryptographic algorithms in 2018. It was published in the *Computeralgebra Rundbrief* in fall 2018, in order to update the community of computer algebra experts, which consists of computer scientists and mathematicians. 
+The article [Post-Quantum Secure Cryptographic Algorithms](https://github.com/XeniaGabriela/pq_for_ca/blob/master/car_article.pdf) outlines the state of post-quantum secure cryptographic algorithms in 2018. It was published in the *Computeralgebra Rundbrief* in fall 2018, in order to update the community of computer algebra experts, which consists of computer scientists and mathematicians. 
 
 **Nevertheless it can also be used as a guideline for a suitable choice of algorithm in this area by other interested readers!**
 
