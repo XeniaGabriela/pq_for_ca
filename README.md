@@ -50,6 +50,10 @@ The advantages of Post-Quantum secure algorithms against Quantum Key Distributio
 * Restoration of comprised systems by pure software updates
 * Well understood in terms of potential attacks
 
+The advantages of QKD on the other side is unconditional security wrt. confidentiality - authenticity needs to be realized with conditionally secure measures.
+In the case of the so-called discrete QKD, this concerns the information exchange via the public channel in particular.
+Furthermore, a wide variety of key exchange methods will offer more fallback possibilities in case of a post-quantum key exchange or an application thereof is deprecated.
+
 ## Post-Quantum Cryptography Standardization
 
 The NIST standardization process of post-quantum secure algorithms has started in 2017 and is expected to be finalized by 2021/22.
