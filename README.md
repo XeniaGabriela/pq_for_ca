@@ -10,9 +10,9 @@ Post-quantum secure cryptographic algorithms offer security against attacks by a
 * **I**ntegrity: message authentication and signatures
 * **A**vailabilty: effective implementations on currently used devices allow systems to operate efficiently while integrating post-quantum secure cryptography  
 
-## Mathematical Ways to meet evolving Technology Threats
+## Mathematical Ways to Meet Evolving Technology Threats
 
-Private keys will be computable with the knowledge of the related public keys of asymmetric cryptographic algorithms, whose security rely on the hardness of the integer factorization and the discrete logarithm problem, as soon as potent enough quantum computers are available.
+Private keys of a an asymmetric cryptosystem relying on the discrete logarithm or integer factorization will be computable in feasible time from the related public key, as soon as potent enough quantum computers are available.
 
 The security of post-quantum secure cryptographic algorithms relies on the hardness of chosen problems in the following mathematical areas:
 
@@ -30,13 +30,13 @@ Neither of them rely on the integer factorization or discrete logarithm problem,
 
 The expected dawn of a new technological era has certainly begun when IBM offered their first commercially available 20-Qubit Quantum Computers November 2017. While it was still discussed if it was necessary to take quantum technology into account in the IT industry during 2017, the estimations about their capability evolvement become touchable every year. 
 
-IBM has announced to create a 1000 qubit universal quantum processor until 2023. The ability of quantum computing devices to solve problems that classical computers practically cannot solve is no longer theory. 
+IBM had announced to create a 1000 qubit universal quantum processor until 2023. A [433 qubit processor]( https://newsroom.ibm.com/2022-11-09-IBM-Unveils-400-Qubit-Plus-Quantum-Processor-and-Next-Generation-IBM-Quantum-System-Two) has been realized in 2022. The ability of quantum computing devices to solve problems that classical computers practically cannot solve is no longer  theory alone, despite of challenges to Quantum computing such as errors and decoherence.
 
 Luckily scientific researchers have specialized in the examinations of the various resulting challenges and questions since the beginning of this century. A series of conferences about post-quantum cryptography, the PQCrypto, started in 2006. Since 2010, they take place in another town of the world every year. The article [Post-Quantum Secure Cryptographic Algorithms](https://github.com/XeniaGabriela/pq_for_ca/blob/master/car_article.pdf) gives an overview of current developments in algorithmic solutions answering the upcoming threats posed by quantum computers as well as unsolved problems in the classical IT landscape.
 
 ## Post-Quantum Cryptography vs. Quantum Key Distribution
 
-Quantum Key Distribution is a protocol for key exchange based on foundations of quantum mechanics. Its limitations are clearly outlined in the following [Whitepaper](https://www.ncsc.gov.uk/whitepaper/quantum-key-distribution).
+Quantum Key Distribution offers various protocols for a symmetric key exchange based on foundations of quantum mechanics. Their scope and limitations are clearly outlined in the following [Whitepaper](https://www.ncsc.gov.uk/whitepaper/quantum-key-distribution).
 
 The advantages of Post-Quantum secure algorithms against Quantum Key Distribution are
 
@@ -68,9 +68,9 @@ Don't hesitate to contact us for further questions:
 * Xenia Bogomolec: [xb@quant-x-sec.com](xb@quant-x-sec.com)
 * Jochen Gerhard: [jochen.gerhard@fias.uni-frankfurt.de](jochen.gerhard@fias.uni-frankfurt.de)
 
-## Why was the Article published in the Context of Computer Algebra?
+## Why was the Article published in the Context of Computeralgebra?
 
-Post-Quantum secure cryptographic algorithms are scientific subjects of computer algebra, which refers to symbolic computation, meaning exact computation with mathematical expressions and objects containing variables that have no given value and are manipulated as symbols. Therefore computer algebra is generally considered as a distinct field from scientific computing, which is usually based on numerical computation with approximate floating point numbers.  
+Post-Quantum secure cryptographic algorithms are scientific subjects of computeralgebra, which refers to symbolic computation, meaning exact computation with mathematical expressions and objects containing variables that have no given value and are manipulated as symbols. Therefore computer algebra is generally considered as a distinct field from scientific computing, which is usually based on numerical computation with approximate floating point numbers.  
 
 Parameter choices are much more delicate for post-quantum crypto schemes than they are for classical ones. Furthermore classical asymmetric schemes mostly rely on number theory, a topic which has been studied in early courses at universities, where post-quantum algorithms include more mathematics from courses which are usually taught at later stages of study courses.
 
